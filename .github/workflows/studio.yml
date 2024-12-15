@@ -26,7 +26,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     defaults:
       run:
-        working-directory: blog
+        working-directory: .
 
     strategy:
       matrix:
@@ -74,4 +74,4 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: blog/.output/public
+          folder: .output/public
