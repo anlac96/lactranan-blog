@@ -21,14 +21,18 @@ A well-structured log entry typically includes:
 Example log structure:
 
 ```json
-{ "timestamp": "2024-12-16T12:00:00Z", "level": "ERROR", "source": "auth_service", "message": "Failed to authenticate user", "user_id": "12345", "error": "Invalid password" }
+{
+    "timestamp": "2024-12-16T12:00:00Z",
+    "level": "ERROR",
+    "source": "auth_service",
+    "message": "Failed to authenticate user",
+    "user_id": "12345",
+    "error": "Invalid password"
+}
 ```
 
 ### **3. When to Log**
 
-- **Application Lifecycle:**
-  - Startup and shutdown events.
-  - Critical system state changes.
 - **Key Events:**
   - User interactions (e.g., login, API requests).
   - External system calls (e.g., database, third-party services).
@@ -50,8 +54,6 @@ Example log structure:
 
 ### **5. Log Third-Party Integration**
 
-- **Centralized Log Management:**
-  - Tools like \*\*ELK Stack (Elasticsearch, Logstash, Kibana)\*\*, **Graylog**, or **Splunk** for collecting, analyzing, and visualizing logs.
 - **Cloud Logging Services:**
   - AWS CloudWatch, Google Cloud Logging, Azure Monitor.
 - **Monitoring and Alerting:**
